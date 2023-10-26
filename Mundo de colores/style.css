@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 7% 10% 1fr 7%;
+    grid-template-areas: "zh" "zn" "zs" "zf";
+    height: 100vh;
+}
+
+header{
+    background-color: #6A9C89;
+    grid-area: zh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border: 2px solid black;
+}
+
+nav{
+    background-color: #C1D8C3;
+    z-index: zn;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+nav #container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+nav #container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 25%;
+    border: 2px black solid;
+}
+
+#r{
+    background-image: url("./img/ir.jpg");
+    background-size: cover;
+    transition: all 0.3s ease;
+    opacity: 1;
+    cursor: pointer;
+}
+
+#r:hover{
+    font-weight: bold;
+    background-size: cover;
+    font-size: 20px;
+    color: white;
+    background-size: cover;
+    transition: all .5 ease;
+    transform: rotate(3deg);
+    
+}
+
+#a{
+    background-image: url(./img/ia.jpg);
+    background-size: cover;
+    transition: all 0.3s ease;
+    opacity: 1;
+    cursor: pointer;
+}
+
+#a:hover{
+    font-weight: bold;
+    background-size: cover;
+    font-size: 20px;
+    color: white;
+    background-size: cover;
+    transition: all .5s ease;
+    transform: rotate(3deg);
+    
+}
+
+#v{
+    background-image: url("./img/iv.jpg");
+    background-size: cover;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#v:hover{
+    font-weight: bold;
+    background-size: cover;
+    font-size: 20px;
+    color: white;
+    background-size: cover;
+    transition: all .5s ease;
+    transform: rotate(3deg);
+    background-color: rgb(69, 174, 206);
+}
+
+#am{
+    background-image: url("./img/iam.jpg");
+    background-size: cover;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#am:hover{
+    font-weight: bold;
+    background-size: cover;
+    font-size: 20px;
+    color: white;
+    background-size: cover;
+    transition: all .5s ease;
+    transform: rotate(-1deg);
+
+    
+    
+}
+
+section{
+    display: flex;
+    justify-content: end;
+    background-color: white;
+    grid-area: zs;
+    transition: background 1s;
+    border: solid 2px black;
+}
+
+section button{
+    padding: 10px;
+}
+
+footer{
+    grid-area: zf;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: #425a7a;
+    border: solid 2px black;
+    font-weight: bold;
+    font-size: 20px;
+    padding-right: 20px;
+}
+
